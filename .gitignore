@@ -1,0 +1,5 @@
+# Ignore Wordpress files
+wp-content/*
+!wp-content/themes
+!wp-content/plugins
+!wp-content/uploads
