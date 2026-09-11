@@ -1,5 +1,16 @@
-# Ignore Wordpress files
-wp-content/*
-!wp-content/themes
-!wp-content/plugins
-!wp-content/uploads
+# Ignore everything at the root directory (WordPress core files & directories)
+/*
+
+# Unignore the wp-content directory so Git can traverse inside it
+!/wp-content/
+
+# Ignore all files and subdirectories inside wp-content
+/wp-content/*
+
+# Whitelist only the target directories inside wp-content
+!/wp-content/themes/
+!/wp-content/plugins/
+!/wp-content/uploads/
+
+# Optional: Track the top-level .gitignore itself
+!.gitignore
